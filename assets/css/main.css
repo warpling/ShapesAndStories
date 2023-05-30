@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f7;
+    color: #1d1d1f;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    padding: 44px;
+}
+
+h1 {
+    font-family: "new-kansas", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 84pt;
+}
+
+h2 {
+    font-family: "new-kansas", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24pt;
+}
+
+h3 {
+    font-family: "new-kansas", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12pt;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+h1#company-name {
+    margin: 20px 0;
+    line-height: 0.93em;
+}
+
+h2#company-tagline {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.main-content {
+    margin-top: 60px;
+}
+
+ul.projects li a {
+    font-family: "new-kansas", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24pt;
+}
+
+ul.contact-options li a {
+    font-family: "new-kansas", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24pt;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+}
+
+.column a {
+    font-size: 48pt;
+    color: #1d1d1f;
+}
+
+.column-leading {
+    padding-left: 0;
+}
+.column-trailing {
+    padding-right: 0;
+}
+
+
+/* Responsive layout - makes the menu and the right column stack on top of each other */
+@media (max-width: 600px) {
+    .columns {
+        flex-direction: column;
+    }
+
+    .column-leading,
+    .column-trailing {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    h1 {
+        font-size: 58pt;
+    }
+
+    h2 {
+        font-size: 18pt;
+    }
+
+    h3 {
+        font-size: 12pt;
+    }
+
+    .column a {
+        font-size: 24pt;
+    }
+}
