@@ -59,6 +59,17 @@ ul.projects li a {
     font-size: 24pt;
 }
 
+ul.projects li.project-blackbox::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('/assets/img/blackbox.png');
+    background-size: cover;
+    margin-right: 10px;
+}
+
+
 ul.contact-options li a {
     font-family: "new-kansas", sans-serif;
     font-weight: 400;

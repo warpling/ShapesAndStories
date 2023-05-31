@@ -11,9 +11,9 @@ title: Grow Pixel
     <div class="column column-leading">
         <h3>Our Projects</h3>
         <ul class="projects">
-            <li class="project"><a href="https://blackboxpuzzles.com">Blackbox</a></li>
-            <li class="project"><a href="http://lightforecast.com">Skylight</a></li>
-            <li class="project"><a href="https://medium.com/swlh/turning-the-iphone-6s-into-a-digital-scale-f2197dc2b6e7">Gravity</a></li>
+            <li class="project project-blackbox"><a href="https://blackboxpuzzles.com">Blackbox</a></li>
+            <li class="project project-skylight"><a href="http://lightforecast.com">Skylight</a></li>
+            <li class="project project-gravity"><a href="https://medium.com/swlh/turning-the-iphone-6s-into-a-digital-scale-f2197dc2b6e7">Gravity</a></li>
         </ul>
     </div>
     <div class="column column-trailing">
