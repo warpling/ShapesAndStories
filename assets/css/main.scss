@@ -20,6 +20,8 @@ body {
     max-width: 960px;
     margin: auto;
     padding: 88px;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -35,6 +37,7 @@ h2 {
     font-weight: 400;
     font-style: normal;
     font-size: 24pt;
+    opacity: 0.8;
 }
 
 h3 {
@@ -42,6 +45,7 @@ h3 {
     font-weight: 400;
     font-style: normal;
     font-size: 12pt;
+    opacity: 0.8;
 }
 
 a {
@@ -61,10 +65,20 @@ h1#company-name {
 h2#company-tagline {
     margin-top: 10px;
     margin-bottom: 10px;
+    padding-left: 4px; /* 'G' of Grow Pixel has a lot of kerning  */
+}
+
+h2 span#just-a-guy {
+    font-size: 16pt;
+    opacity: 0.5;
 }
 
 .content {
     margin-top: 60px;
+}
+
+div.column h3 {
+    opacity: 0.8;
 }
 
 div.column h3:not(:first-child) {
@@ -104,6 +118,7 @@ ul.projects li.project-skylight::before {
 ul.projects li.project-gravity::before {
     background-image: url('/assets/img/gravity.png');
 }
+
 ul.contact-options li a {
     font-family: "new-kansas", sans-serif;
     font-weight: 400;
@@ -111,10 +126,15 @@ ul.contact-options li a {
     font-size: 24pt;
 }
 
+.spacer {
+    flex-grow: 1;
+}
+
 .columns {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-grow: 2;
 }
 
 .column {
@@ -132,7 +152,7 @@ ul.contact-options li a {
     flex: 0 0 30%;
 }
 
-.column a {
+.projects li a {
     font-size: 48pt;
 }
 
