@@ -57,18 +57,24 @@ ul {
     padding-left: 0;
 }
 
-h1#company-name {
+h1.company-name {
     margin: 20px 0;
     line-height: 0.93em;
 }
 
-h2#company-tagline {
+h1.company-name.company-name-old {
+    text-decoration: line-through;
+    opacity: 0.1;
+    margin-top: -1em;
+}
+
+h2.company-tagline {
     margin-top: 10px;
     margin-bottom: 10px;
     padding-left: 4px; /* 'G' of Grow Pixel has a lot of kerning  */
 }
 
-h2 span#just-a-guy {
+h2 span.just-a-guy {
     font-size: 16pt;
     opacity: 0.5;
 }

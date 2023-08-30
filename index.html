@@ -4,8 +4,13 @@ layout: default
 <div class="spacer"></div>
 <div class="columns content">
   <div class="column column-leading content-primary">
-    <h1 id="company-name">{{ site.title }}</h1>
-    <h2 id="company-tagline">A multinational games and experience design corporation <span id="just-a-guy">(it's actually just <a href="https://twitter.com/warpling">a guy</a>)</span></h2>
+    {% if site.title != "Grow Pixel" %}
+    <h1 class="company-name company-name-old">
+      Grow Pixel
+    </h1>
+    {% endif %}
+    <h1 class="company-name">{{ site.title }}</h1>
+    <h2 class="company-tagline">A multinational games and experience design corporation <span class="just-a-guy">(it's actually just <a href="https://twitter.com/warpling">a guy</a>)</span></h2>
 </div>
 <div class="column column-trailing content-secondary">
     <h3>Projects</h3>
