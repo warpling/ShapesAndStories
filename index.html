@@ -27,7 +27,12 @@ layout: default
   <h3>Contact</h3>
   <ul class="contact-options">
       <li class="contact"><a href="mailto:ryan@growpixel.com">Email</a></li>
-      <li class="contact"><a href="https://twitter.com/growpixel">Twitter</a></li>
+      <li class="contact">
+        {% if site.title == "Grow Pixel" %}
+        <a href="https://twitter.com/growpixel">Twitter</a></li>
+        {% else %}
+        <a href="https://twitter.com/shapesnstories">Twitter</a></li>
+        {% endif %}
   </ul>
 </div>
 </div>
