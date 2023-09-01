@@ -275,10 +275,6 @@ ul.contact-options li a {
     h3 {
         font-size: 12pt;
     }
-
-    .column a {
-        font-size: 24pt;
-    }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -287,7 +283,7 @@ ul.contact-options li a {
     color: $text-light;
   }
 
-  a {
+  .project a {
     color: $text-light;
   }
 
