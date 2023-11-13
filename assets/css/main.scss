@@ -169,6 +169,10 @@ ul.projects li.project-blackbox-xr::after {
 }
 
 
+ul.projects li.project-newji::before {
+    background-image: url('/assets/img/newji.png');
+}
+
 ul.projects li.project-blackbox::before {
     background-image: url('/assets/img/blackbox.png');
 }
