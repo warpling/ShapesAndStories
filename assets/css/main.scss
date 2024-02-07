@@ -95,12 +95,20 @@ div.column h3:not(:first-child) {
     margin-top: 30px;
 }
 
+ul.projects li {
+    font-family: "new-kansas", sans-serif;
+    font-weight: 200;
+    display: flex;
+    align-items: baseline;
+}
+
 ul.projects li a {
     font-family: "new-kansas", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 24pt;
-    vertical-align: middle;
+
+    display: inline-block;
 }
 
 ul.projects li.project {
@@ -119,35 +127,7 @@ ul.projects li.project::before {
 }
 
 ul.projects li.project-blackbox-xr::before {
-    width: 44x;
-    height: 44x;
-    border-radius: 50px;
-
-    background: linear-gradient(-45deg, #ea445a, #a357d7, #5856ce, #3478f6, #5aadc4, #f09a37);
-    background-size: 1000% 1000%;
-    animation: gradient 10s ease infinite;
-}
-
-ul.projects li.project-blackbox-xr::after {
-
-    /* Duplicating ::before */
-    content: "";
-    display: inline-block;
-    width: 44px;
-    height: 44px;
-    background-size: cover;
-    margin-right: 14px;
-    vertical-align: middle;
-
-    /* Place on top of ::before */
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 44x;
-    height: 44x;
-    border-radius: 50px;
-    background-image: url('/assets/img/AppIconGrid.png');
+    background-image: url('/assets/img/Blackbox-xr.png');
 }
 
 @keyframes gradient {
@@ -294,10 +274,4 @@ ul.contact-options li a {
   .project a {
     color: $text-light;
   }
-
-  ul.projects li.project-blackbox-xr::before {
-        background: linear-gradient(-45deg, #eb4b63, #b260ea, #5e5cde, #3b82f7, #6ac5dd, #f1a33c);
-        background-size: 1000% 1000%;
-        animation: gradient 10s ease infinite;
-    }
 }
